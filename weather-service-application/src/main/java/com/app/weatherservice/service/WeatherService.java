@@ -91,7 +91,7 @@ public class WeatherService {
 			LocalDate today =  LocalDate.now();
 			List<LocalDate> dateArray = weatherObj.getWeatherDetails().stream().map(e->e.getDateTime().toLocalDate()).collect(Collectors.toList());
 
-			if(dateArray.contains(today.plusDays(4))) {
+			if(dateArray.contains(today.plusDays(5))) {
 				log.info("+++ Forecast Weather Data -- Exists in DB already +++");
 				return new ResponseEntity<WeatherEntity>(weatherObj,HttpStatus.OK);			
 			} 
