@@ -80,6 +80,7 @@ To get the weather for a specific city:
 bash
 Copy code
 GET http://localhost:8082/weather/live/{city}
+
 To get the forecast for a specific city:
 
 bash
